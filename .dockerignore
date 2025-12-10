@@ -1,0 +1,29 @@
+# Node / Angular build dependencies
+node_modules
+dist
+
+# Git metadata
+.git
+.gitignore
+
+# IDE / Editor metadata
+.idea
+.vscode
+*.sublime-workspace
+*.sublime-project
+
+# Logs and temporary files
+npm-debug.log
+*.log
+
+# Docker files (Dockerfile itself should be included in context)
+#Dockerfile
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
