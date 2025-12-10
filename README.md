@@ -3,8 +3,8 @@
 https://hub.docker.com/repository/docker/mohammadfawad/jwt-angular-demo-app/general
 
 docker pull mohammadfawad/jwt-angular-demo-app:latest
-docker run -p mohammadfawad/jwt-angular-demo-app:latest
-docker run -d mohammadfawad/jwt-angular-demo-app:latest
+docker run -d -p 4200:80 --name angular-app mohammadfawad/jwt-angular-demo-app:latest
+
 
 # JwtAngularDemo
 
