@@ -11,7 +11,7 @@ export const jwtInterceptor: HttpInterceptorFn = (req, next) => {
   const token = auth.getToken();
 
   // Prevent attaching token on login and register requests
-  if (req.url.includes('/auth/login') || req.url.includes('/register')) {
+  if ( req.url.endsWith('/auth/login') ||  req.url.endsWith('/register')) {
     return next(req);
   }
 

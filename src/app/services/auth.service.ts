@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class AuthService {
 
-  private baseUrl = 'http://localhost:8081/auth';
+  private baseUrl = 'http://52.3.36.40:8081';
 
   // Single source of truth for token
   private tokenSignal = signal<string | null>(localStorage.getItem('jwtToken'));
@@ -17,9 +17,9 @@ export class AuthService {
   }
 
   // -------- API Calls ----------
-  login(credentials: any): Observable<any> {
-    return this.http.post(`${this.baseUrl}/login`, credentials);
-  }
+ login(credentials: any): Observable<any> {
+  return this.http.post(`${this.baseUrl}/auth/login`, credentials);
+}
 
   // -------- Token Handling ----------
   saveToken(token: string) {

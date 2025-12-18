@@ -1,14 +1,3 @@
-# docker Image
-
-https://hub.docker.com/repository/docker/mohammadfawad/jwt-angular-demo-app/general
-
-docker pull mohammadfawad/jwt-angular-demo-app:latest
-docker run -d -p 4200:80 --name angular-app mohammadfawad/jwt-angular-demo-app:latest
-
-If you want a version with restart always:
-docker run -d -p 4200:80 --restart=always --name angular-app mohammadfawad/jwt-angular-demo-app:latest
-
-
 # JwtAngularDemo
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.5.

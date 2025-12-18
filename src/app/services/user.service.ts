@@ -4,7 +4,7 @@ import { map } from 'rxjs/operators';
 
 @Injectable({ providedIn: 'root' })
 export class UserService {
-  private api = 'http://localhost:8081/home/users';
+  private api = 'http://52.3.36.40:8081/home/users';
 
   constructor(private http: HttpClient) {}
 
